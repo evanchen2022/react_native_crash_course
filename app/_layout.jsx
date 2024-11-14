@@ -2,6 +2,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Slot, Stack } from 'expo-router' //use this one for stack the index page in the front
 import "../global.css";
 
+
+
 const RootLayout = () => {
   return (
     <Stack>
