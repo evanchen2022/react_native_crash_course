@@ -7,6 +7,7 @@ import FileUploadButton from '../components/FileUploadButton';
 import { useState } from 'react';
 
 import MessageSender from '../components/MessageSender';
+import User from '../components/infor';
 
 
 export default function App() {
@@ -30,12 +31,15 @@ export default function App() {
             <StatusBar style="auto" />
             <Link href="/profile" style={{ color: 'red', marginBottom: 20 }}>Go to Profile, click here!</Link>
 
+            {/* infor Component */}
+            <User/>
+
             {/* MessageSender Component */}
             <MessageSender />
 
 
             {/* Information Area */}
-            <View 
+            {/*<View 
                 style={{
                     width: '80%',
                     backgroundColor: '#f0f0f0',
@@ -59,17 +63,17 @@ export default function App() {
             </View>
 
             {/* Input and Buttons Row */}
-            <View className="flex-row items-center">
+            {/*<View className="flex-row items-center">
                 <TextInput 
                     placeholder="Type your message"
                     className="border p-2 flex-1 rounded-lg"
                     style={{ width: '60%', marginRight: 10 }}
                 />
 
-                {/* File Upload Button */}
+                
                 <FileUploadButton onFileSelect={handleFileSelected} />
 
-                {/* Send Button */}
+                
                 <TouchableOpacity 
                     style={{
                         backgroundColor: 'blue', 
@@ -79,7 +83,7 @@ export default function App() {
                 >
                     <Text style={{ color: 'white' }}>Send</Text>
                 </TouchableOpacity>
-            </View>
+            </View> */}
         </View>
     );
 }
